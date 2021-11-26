@@ -9,7 +9,7 @@ export const Features = () => {
         <section className="container">
             <div className="feature-container">
                 <div className="feature-details">
-                    <h3>Invest your money in dollars</h3>
+                    <h2>Invest your money in dollars</h2>
                     <p className="feature-text">
                         By holding your investments in a stable currency, your
                         money grows more over time and retains its value better.
@@ -21,7 +21,7 @@ export const Features = () => {
             <div className="feature-container">
                 <img src={vectorTwo} alt="vector two" />
                 <div className="feature-details">
-                    <h3>Choose what's best for you</h3>
+                    <h2>Choose what's best for you</h2>
                     <p className="feature-text">
                         Unlike other platforms, Rise lets you pick between
                         stocks, US real estate and fixed income, according to
@@ -33,7 +33,7 @@ export const Features = () => {
             </div>
             <div className="feature-container">
                 <div className="feature-details">
-                    <h3>Set goals and reach them</h3>
+                    <h2>Set goals and reach them</h2>
                     <p className="feature-text">
                         You can invest towards a goal on Rise--retirement,
                         higher education, save for your home or travel budgets.
@@ -47,7 +47,7 @@ export const Features = () => {
             <div className="feature-container">
                 <img src={vectorFour} alt="vector four" />
                 <div className="feature-details">
-                    <h3>We remember so you dont have to</h3>
+                    <h2>We remember so you dont have to</h2>
                     <p className="feature-text">
                         Our Auto-invest feature makes it easy to stay
                         consistent, even when you forget. Set a funding amount,

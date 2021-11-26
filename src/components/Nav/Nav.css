@@ -5,6 +5,9 @@ nav {
     margin: 0 auto;
     color: var(--primary-color);
 }
+.hamburger-menu {
+    display: none;
+}
 .menu-items {
     display: flex;
     list-style: none;
@@ -35,8 +38,11 @@ svg {
     margin-top: 20px;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
     .menu-items {
         display: none;
+    }
+    .hamburger-menu {
+        display: block;
     }
 }

@@ -71,16 +71,14 @@ span.small-text {
     display: flex;
     flex-direction: column;
 }
-.feature-details h3 {
+.feature-details h2 {
     font-size: 2rem;
     color: var(--black);
     font-weight: 800;
     line-height: 1.2;
-}
-
-.feature-details h3 {
     max-width: 20ch;
 }
+
 .feature-details p {
     max-width: 32ch;
     margin: 0.5em 0;
@@ -90,6 +88,7 @@ span.small-text {
 .feature-details span {
     color: var(--primary-color);
     font-weight: 700;
+    cursor: pointer;
 }
 
 .feature-container {
@@ -127,13 +126,13 @@ span.small-text {
 .community-text {
     color: var(--grey);
     font-weight: 600;
-    width: 50ch;
-    height: 150px;
+    /* width: 40ch; */
+    height: 200px;
 }
 .card-text {
     margin: 1.25rem 0;
     padding: 20px;
-    width: 30ch;
+    /* width: 30ch; */
 }
 .card-footer {
     display: flex;
@@ -257,14 +256,15 @@ span.small-text {
 .review-cards .inner-text {
     color: var(--grey);
     font-weight: 600;
-    height: 170px;
+    min-height: 170px;
+    height: 100%;
 }
 
 .community-text {
     margin-top: 20px;
 }
 .community img {
-    max-width: 550px;
+    max-width: 100%;
 }
 .cta {
     background-color: var(--light-teal);
@@ -272,7 +272,7 @@ span.small-text {
 }
 .cta-left h3 {
     font-size: 2.25rem;
-    width: 30ch;
+    width: 20ch;
     font-weight: 800;
     line-height: 1;
 }
@@ -299,20 +299,34 @@ span.small-text {
     }
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 768px) {
     .cta {
-        margin: 0 30px;
+        flex-direction: column;
+    }
+    .cta-details {
+        margin: auto;
+    }
+    .cta-left div {
+        justify-content: center;
+    }
+    .cta-right {
+        margin-top: 2rem;
+    }
+    .cta-left h3 {
+        width: 100%;
+    }
+    .cta div {
+        text-align: center;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 540px) {
     .hero,
     .assets-cards {
         margin: auto;
         flex-direction: column;
     }
-    .hero div,
-    .cta div {
+    .hero div{
         text-align: center;
     }
     .hero h1 {
@@ -320,21 +334,14 @@ span.small-text {
         margin-bottom: 2rem;
         font-size: 3rem;
     }
-    .hero-details,
-    .cta-details {
+    .hero-details {
         margin: auto;
     }
-    .hero-left div,
-    .cta-left div {
+    .hero-left div {
         justify-content: center;
     }
-    .hero-right,
-    .cta-right {
+    .hero-right {
         margin-top: 2rem;
-    }
-
-    .cta-left h3 {
-        width: 100%;
     }
 
     .feature-container {

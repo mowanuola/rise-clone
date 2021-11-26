@@ -1,6 +1,7 @@
 import React from 'react'
 import './Nav.css'
 import riseLogo from '../../assets/img/rise-logo.svg'
+import hamburgerMenu from '../../assets/img/hamburger.svg'
 
 const Nav = () => {
     const navItems = [
@@ -16,6 +17,11 @@ const Nav = () => {
             <p className="logo">
                 <img src={riseLogo} alt="Rise Logo" />
             </p>
+            <img
+                src={hamburgerMenu}
+                alt="Side Menu"
+                className="hamburger-menu"
+            />
             <ul className="menu-items">
                 {navItems.map((item, i) => (
                     <li
